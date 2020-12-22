@@ -1,12 +1,12 @@
 /* Ryan Brown */
 
 body {
-  background-color: #C0C0C0;
+  background-color: #000000;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #000084;
+    background-color: #000000;
 }
 
 .topnav a {
@@ -19,7 +19,10 @@ body {
   	font-family: Arial;
   	font-weight:bold;
     width: 14%;
-  	border-right: 1px solid #000084;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 .topnav a:hover {
@@ -31,7 +34,7 @@ body {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #000084;
+   background-color: #000000;
    text-align: center;
    color: #FFFFFF;
 }
@@ -59,15 +62,15 @@ body {
 
 h1 {
 	text-align: center;
-	color: #000000;
+	color: #ffffff;
 	font-size: 60px;
     font-family: Arial;
     text-decoration-line: none;
 }
 
 h2 {
-	text-align: left;
-	color: #000000;
+	text-align: center;
+	color: #ffffff;
 	font-size: 28px;
     font-family: Arial;
     text-decoration-line: none;
@@ -75,17 +78,25 @@ h2 {
 }
 
 h3 {
-	text-align: left;
-	color: #000000;
-	font-size: 22px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
     font-family: Garamond;
     text-decoration-line: underline;
     padding: 5px;
 }
 
+h4 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+    font-family: Garamond;
+    padding: 5px;
+}
+
 p {
-  text-align: left;
-  color: #000000;
+  text-align: center;
+  color: #ffffff;
   font-size: 18px;
   padding: 5px;
   font-family: Garamond;
