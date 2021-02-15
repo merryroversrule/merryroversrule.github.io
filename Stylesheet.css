@@ -1,18 +1,18 @@
 /* Ryan Brown */
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
 	  text-decoration: none;
     padding: 14px 16px;
@@ -26,7 +26,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #FFFFFF;
+    background-color: #000000;
     color: #000084;
 }
 
@@ -34,9 +34,9 @@ body {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #000000;
+   background-color: #ffffff;
    text-align: center;
-   color: #FFFFFF;
+   color: #000000;
 }
 
 .gallery {
@@ -62,7 +62,7 @@ body {
 
 h1 {
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	font-size: 60px;
     font-family: Arial;
     text-decoration-line: none;
@@ -70,7 +70,7 @@ h1 {
 
 h2 {
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	font-size: 28px;
     font-family: Arial;
     text-decoration-line: none;
@@ -79,7 +79,7 @@ h2 {
 
 h3 {
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	font-size: 12px;
     font-family: Garamond;
     text-decoration-line: underline;
@@ -88,7 +88,7 @@ h3 {
 
 h4 {
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	font-size: 12px;
     font-family: Garamond;
     padding: 5px;
@@ -96,7 +96,7 @@ h4 {
 
 p {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   padding: 5px;
   font-family: Garamond;
