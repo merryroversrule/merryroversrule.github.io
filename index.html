@@ -33,28 +33,29 @@ window.cookieconsent.initialise({
 });
 </script>
 
-<script
-  src="http://code.jquery.com/jquery-latest.js">
- </script>
- <script
-  src="http://code.jquery.com/jquery-migrate-1.2.1.js">
- </script>
- </head>
- <body>
- <h1>Browser Information</h1>
- <p id="name"></p>
- <script language="JavaScript">
-  var browser =
-  $.uaMatch(navigator.userAgent).browser;
-  $('p[id="name"]').html(
-  "Browser Name: <span>" + browser + "</span>");
- </script>
- <p id="version"></p>
- <script language="JavaScript">
-  $('p[id="version"]').html(
-  "Version Number: <span>" + $.browser.version +
-  "</span>");
- </script>
+<script type="text/javascript">
+function writeCookie1() {
+  document.cookie = 'cookie=Yes; expires=Fri, 1 Jan 2022 05:28:21 UTC; path=/';
+  alert("You have created a new entry");
+  }
+	
+function readCookie(name)
+{
+  var ca = document.cookie.split(';');
+  var nameEQ = name + "=";
+  for(var i=0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1, c.length); //delete spaces
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+  return null;
+}
+
+function eraseCookie(name)
+{
+  createCookie(name, "", -1);
+}	
+</script>
 	
 <body>
 <h1> Ryan Brown </h1>
@@ -73,7 +74,7 @@ window.cookieconsent.initialise({
 <h2>
 About Me
 </h2>
-
+<a href="javascript: alert(document.cookie)">this result</a>
 <p>
 	Hello Everyone!
 	<br><br>
@@ -102,7 +103,6 @@ About Me
 	View my 
 	<a href = "PrivacyPolicy.html">Privacy Policy</a>
 	<br>
-	<p id="name"></p>
 </div>
 </body>
 </html>
