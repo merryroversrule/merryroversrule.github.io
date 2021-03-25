@@ -41,48 +41,44 @@ Photographs have been taken using:
 </p>
 
 <!-- Code from W3Schools - https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
-<!-- The grid: four columns -->
-<div class="row">
-  <div class="column">
-    <img src="CoastalPath-WestWemyss.jpg" alt="Coastal Path near West Wemyss" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="CoastalPath-WestWemyss.jpg">
+      <img src="CoastalPath-WestWemyss.jpg" alt="Coastal Path near West Wemyss" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
   </div>
 </div>
 
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>	
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-<script>
-	function myFunction(imgs) {
-	  // Get the expanded image
-	  var expandImg = document.getElementById("expandedImg");
-	  // Get the image text
-	  var imgText = document.getElementById("imgtext");
-	  // Use the same src in the expanded image as the image being clicked on from the grid
-	  expandImg.src = imgs.src;
-	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-	  imgText.innerHTML = imgs.alt;
-	  // Show the container element (hidden with CSS)
-	  expandImg.parentElement.style.display = "block";
-	}
-</script>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
 
 <div class="gallery">
   <a target="_blank" href="CoastalPath-WestWemyss.jpg">
